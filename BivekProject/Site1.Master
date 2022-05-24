@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="BivekProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <title></title>
+  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+       <nav class="navbar navbar-default" style="background-color:red">
+<div class="container-fluid">
+
+<!-- BRAND -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#alignment-example" aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">
+    <img src="img/new.png" style="height:30px;width:100px" /></a>
+</div>
+
+<!-- COLLAPSIBLE NAVBAR -->
+<div class="collapse navbar-collapse" id="alignment-example">
+
+<!-- Links -->
+<ul class="nav navbar-nav">
+<li><a href="#" style="color:white">Home <span class="sr-only">(current)</span></a></li>
+<li><a href="#" style="color:white">Contact</a></li>
+<li><a href="#" style="color:white">About Us</a></li>
+</ul>
+
+<!-- Search -->
+<%--<form class="navbar-form navbar-right" role="search">
+<div class="form-group">
+<input type="text" class="form-control">
+</div>
+<button type="submit" class="btn btn-default">Search</button>
+</form>--%>
+
+     <ul class="nav navbar-nav navbar-right">
+      <li><a href="#" style="color:white"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#" style="color:white"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+
+</div>
+
+</div>
+</nav>
+
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </div>
+
+</body>
+</html>
